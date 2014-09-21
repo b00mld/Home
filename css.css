@@ -18,7 +18,7 @@ form {
 	line-height: 40px;
 }
 iframe {
-	padding:24px;
+	margin:24px auto;
 }
 .outer {
 	display: table;
@@ -41,6 +41,7 @@ iframe {
 #music {
 		width:640px;
 		margin:5px auto;
+		background-color: rgba(15, 15, 15, 0.8);
 }
 #wrapper {
 	background-color: rgba(15, 15, 15, 0.8);
