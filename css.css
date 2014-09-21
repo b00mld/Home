@@ -1,0 +1,53 @@
+body {
+	background-image: url(tumblr_static.png); 
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size: cover;
+	overflow-y: hidden;
+	overflow-x:hidden;
+
+}
+form {
+	margin:0px auto;
+	display:block;
+	vertical-align: middle;
+	line-height: 40px;
+}
+
+.outer {
+	display: table;
+	position:absolute;
+	height: 100%;
+	width:100%;
+}
+.middle {
+	display: table-cell;
+	vertical-align: middle;
+
+}
+#head {
+	background-color: rgba(15,15,15,0.8);
+	width:640px;
+	height:40px;
+	margin:5px auto;
+	text-align:center;
+}
+#music {
+		width:640px;
+		margin:5px auto;
+}
+#wrapper {
+	background-color: rgba(15, 15, 15, 0.8);
+	height:360px;
+	width:640px;
+	margin:0 auto;
+	vertical-align: middle;
+}
+img {
+	float:left;
+	padding:24px;
+}
