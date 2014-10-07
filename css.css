@@ -55,3 +55,6 @@ img {
 	float:left;
 	padding:24px;
 }
+@media screen and (max-width:1366px){
+	#music{display:none;}
+}
