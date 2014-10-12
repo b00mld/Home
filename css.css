@@ -1,5 +1,5 @@
 body {
-	background-image: url(https://raw.githubusercontent.com/b00mld/Home/gh-pages/tumblr_static.png); 
+	background-image: url(https://raw.githubusercontent.com/b00mld/Home/gh-pages/tumblr_static.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -53,7 +53,7 @@ iframe {
 }
 img {
 	float:left;
-	padding:24px;
+	margin:24px;
 }
 @media screen and (max-width:1366px){
 	#music{display:none;}
