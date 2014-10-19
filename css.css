@@ -58,10 +58,10 @@ iframe {
 	transition: all 1s
 }
 #music {
-		width:640px;
-		height:360px;
-		margin:5px auto;
-		background-color: rgba(15, 15, 15, 0.8);
+	width:640px;
+	height:360px;
+	margin:5px auto;
+	background-color: rgba(15, 15, 15, 0.8);
 }
 #wrapper {
 	background-color: rgba(15, 15, 15, 0.8);
