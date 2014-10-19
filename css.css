@@ -75,14 +75,18 @@ iframe:hover {
 	margin:0 auto;
 	vertical-align: middle;
 }
+a {
+	background:black;
+}
+
 img {
 	float:left;
-	margin:24px;
-	opacity: 0.4;
+	margin-left:23px;
+	margin-top:23px;
 	transition:all 1s;
 }
 img:hover {
-	opacity:1;
+	opacity:0.6;
 	transition:all 1s;
 }
 @media screen and (max-width:1366px){
