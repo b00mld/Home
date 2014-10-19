@@ -1,5 +1,5 @@
 body {
-	background-image: url(https://raw.githubusercontent.com/b00mld/Home/gh-pages/1411328639775.jpg);
+	background-image: url(https://raw.githubusercontent.com/b00mld/Home/gh-pages/1411263461490.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -18,7 +18,12 @@ form {
 	line-height: 40px;
 }
 iframe {
-	padding:12px;
+opacity:0.8;
+transition:all 1s;
+}
+iframe:hover {
+	opacity:1;
+	transition:all 1s;
 }
 .outer {
 	display: table;
@@ -74,9 +79,11 @@ img {
 	float:left;
 	margin:24px;
 	opacity: 0.4;
+	transition:all 1s;
 }
 img:hover {
 	opacity:1;
+	transition:all 1s;
 }
 @media screen and (max-width:1366px){
 	#music{display:none;}
