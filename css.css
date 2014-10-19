@@ -1,5 +1,5 @@
 body {
-	background-image: url(https://raw.githubusercontent.com/b00mld/Home/gh-pages/1411263461490.jpg);
+	background-image: url(https://raw.githubusercontent.com/b00mld/Home/gh-pages/1411328639775.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -42,24 +42,24 @@ iframe:hover {
 	height:40px;
 	margin:5px auto;
 	text-align:center;
+	overflow: hidden;
 }
 .searchBar {
 	background-color:rgba(0,0,0,0);
-	width:200px;
-	height:20px;
-	padding: 0;
-	text-align:center;
+	width:640px;
+	height:40px;
+	margin: 0 auto;
 	outline:0;
 	transition: all 1s;
 	border-style:none;
+	text-align: left;
 }
 .searchBar:Hover {
 	background-color:rgba(0,0,0,0.1);
 	transition: all 1s;
 }
 .searchBar:focus {
-	background-color:white;
-	width:620px;
+	background-color:rgba(0,0,0,0.3);
 	transition: all 1s
 }
 #music {
@@ -90,4 +90,13 @@ img:hover {
 }
 @media screen and (max-width:1080px){
 	#head{display:none;}
+}
+input {
+	padding-left:10px;
+	font-size:20px;
+	color:white;
+}
+input[type=text] {
+	color:rgba(170,170,170,1);
+	font-family: 'Courier';
 }
