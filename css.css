@@ -83,6 +83,7 @@ img {
 	float:left;
 	margin-left:23px;
 	margin-top:23px;
+	cache-control: public;
 }
 @media screen and (max-width:1366px){
 	#music{display:none;}
