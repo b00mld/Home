@@ -1,4 +1,6 @@
-body {
+body {	
+	overflow-y: hidden;
+	overflow-x:hidden;
 	background-image: url(bg/calm.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -7,9 +9,6 @@ body {
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size: cover;
-	overflow-y: hidden;
-	overflow-x:hidden;
-
 }
 form {
 	margin:0px auto;
