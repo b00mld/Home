@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Ubuntu|Roboto|Montserrat);
 body {	
 	overflow-y: hidden;
 	overflow-x:hidden;
@@ -109,6 +110,16 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
+.bgvideo {
+	position: fixed;
+	right:0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%
+	width:auto;
+	height:auto;
+	z-index: -9999;
+}
 .block {
 	line-height: 100px;
 	vertical-align: middle;
@@ -123,9 +134,10 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 a {
 	text-decoration: none;
-	font-family: "Lato";
+	font-family: "Roboto";
 	color:rgba(255,255,255,0.4);
 	transition:all ease-out 0.5s;
+	-webkit-font-smoothing: antialiased;
 
 }
 a:hover {
