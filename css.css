@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato|Ubuntu|Roboto|Montserrat);
 body {	
-	overflow-y: hidden;
+	overflow-y:hidden;
 	overflow-x:hidden;
 	background-color: white;
 	/**background-image: url(bg/calm.jpg);**/
