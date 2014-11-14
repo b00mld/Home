@@ -36,6 +36,7 @@ iframe:hover {
 	vertical-align: middle;
 
 }
+
 #head {
 	width:530px;
 	height:50px;
@@ -49,32 +50,29 @@ iframe:hover {
 	background-color:#F5F5F5;
 	width:257.5px;
 	margin-top: 5px;
-	height:40px;
 	margin-left: 5px;
+	height:40px;
 	outline:0;
 	transition: all 1s;
 	border-style:none;
 	border-radius: 2px;
 	text-align: left;
-	float: left;
+	float:left;
 }
 .searchBar:Hover {
 	background-color:rgba(0,0,0,0.1);
 	transition: all 1s;
+	width:257.5px;
 }
 .searchBar:focus {
 	background-color:rgba(0,0,0,0.1);
 	transition: all 1s
+	width:257.5px;
 }
 .searchForm {
 	width:640px;
 }
-#music {
-	width:640px;
-	height:360px;
-	margin:5px auto;
-	background-color: rgba(15, 15, 15, 0.8);
-}
+
 #wrapper {
 	background-color: #F1F1F1;
 	height:215px;
@@ -99,9 +97,10 @@ input {
 	padding-left:10px;
 	font-size:20px;
 	color:white;
+
 }
 input[type=text] {
-	color:rgba(170,170,170,1);
+	color:rgba(170,170,170,0.2);
 	font-family: 'Courier';
 }
 input[type="search"]::-webkit-search-decoration,
@@ -125,4 +124,11 @@ input[type="search"]::-webkit-search-results-decoration {
 a {
 	text-decoration: none;
 	font-family: "Lato";
+	color:rgba(255,255,255,0.4);
+	transition:all ease-out 0.5s;
+
 }
+a:hover {
+	color:rgba(255,255,255,1);
+	transition:all ease-out 0.5s;
+};
