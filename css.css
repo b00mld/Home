@@ -120,6 +120,18 @@ input[type="search"]::-webkit-search-results-decoration {
 	height:auto;
 	z-index: -9999;
 }
+#sheet {
+	position: fixed;
+	right:0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%
+	width:auto;
+	height:100%;
+	z-index: -999;
+	background-color: rgba(0,0,0,0.8);
+
+}
 .block {
 	line-height: 100px;
 	vertical-align: middle;
@@ -138,7 +150,6 @@ a {
 	color:rgba(255,255,255,0.4);
 	transition:all ease-out 0.5s;
 	-webkit-font-smoothing: antialiased;
-
 }
 a:hover {
 	color:rgba(255,255,255,1);
