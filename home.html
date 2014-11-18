@@ -8,8 +8,18 @@ Home
 <meta name=viewport content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css.css">
 <link rel="icon" type="image/png" href="https://people.mozilla.org/~shorlander/files/australis-toolbar-buttons/images/favicon-homeTab.png">
+<script src="js/jquery-1.11.1.min.js"></script>
 </head>
 <body>
+<script>
+$(document).ready(function(){
+  $('#video').hide();
+
+  $('#button').click(function() {
+    $('#video').slideToggle();
+  });
+});
+</script>
 <div id="sheet"></div>
 <video autoplay loop muted class="bgvideo" id="bgvideo">
 <source src="bg/CrsoJbL.webm" type="video/webm">
@@ -24,6 +34,11 @@ Home
         <input class="searchBar" id="duck" type="search" autocomplete="off" name="q" maxlength="255" placeholder="DuckDuckGo"/>
       </form>
   	</div>
+    <div id="video-wrapper">
+    <div id="button">Music</div>
+    <div id="video">
+    <iframe width="530" height="300" src="http://www.youtube.com/embed/videoseries?list=PL2ElZl8KY77Ae9qAFoEZeCSBitqSR70Qp" frameborder="0" allowfullscreen></iframe>
+    </div>
     <div id="wrapper">
 	  <a href="http://www.4chan.org/" target="_blank"><div class="block" style="background-color:#57C77D;">4chan</div></a>
 	  <a href="http://www.reddit.com/" target="_blank"><div class="block" style="background-color:#579FBD;">Reddit</div></a>

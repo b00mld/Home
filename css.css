@@ -154,4 +154,28 @@ a {
 a:hover {
 	color:rgba(255,255,255,1);
 	transition:all ease-out 0.5s;
-};
+}
+#video-wrapper {
+
+}
+#button {
+	width:530px;
+	height:20px;
+	background-color: #F1F1F1;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 20px;
+	vertical-align:middle; 
+	font-family: 'Montserrat', sans-serif;
+	color:rgba(0,0,0,0.3);
+}
+#video {
+	width: 530px;
+	height:300px;
+	background-color: #F1F1F1;
+	margin:auto;
+	margin-bottom: 5px;
+	border-radius: 3px;
+}
