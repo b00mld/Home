@@ -17,12 +17,16 @@ $(document).ready(function(){
 
   $('#button').click(function() {
     $('#video').slideToggle();
+
+  var videos = "1.webm";
+  $('video source').attr("src", 'bg/' + videos);
+  $('video source')[0].load();
   });
 });
 </script>
 <div id="sheet"></div>
 <video autoplay loop muted class="bgvideo" id="bgvideo">
-<source src="bg/CrsoJbL.webm" type="video/webm">
+<source src="" type="video/webm">
 </video>
 <div class="outer">
   <div class="middle">
