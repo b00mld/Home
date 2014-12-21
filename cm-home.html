@@ -43,9 +43,21 @@ $(document).ready(function(){
 	  <a href="http://www.youtube.com/" target="_blank"><img src="http://i.imgur.com/NYFZ6wj.png" height="80" width="80"></a>
 	  <a href="http://www.prodirectsoccer.com/" target="_blank"><img src="http://i.imgur.com/gd9JQSx.png" height="80" width="80"></a>
     </div>
+    <p id="text"></p>
     <script>
-     
+     pokemon = Math.floor(Math.random() * 649) + 1;
 
+      
+      if ( pokemon < 10 ){
+        pokemon = "00" + pokemon;
+      } else if (pokemon > 10 && pokemon < 100){
+        pokemon = "0" + pokemon;
+      }
+      
+      console.log(pokemon)
+      
+      document.getElementById("poke").src = 'http://sprites.pokecheck.org/i/' + pokemon + '.gif'; 
+    setInterval(function(){
       var d = new Date();
       var days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
       var months = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
@@ -78,21 +90,10 @@ $(document).ready(function(){
       if ( minutes < 10 ){
         minutes = "0" + minutes;
       }
-      
-      pokemon = Math.floor(Math.random() * 649) + 1;
 
-      
-      if ( pokemon < 10 ){
-        pokemon = "00" + pokemon;
-      } else if (pokemon > 10 && pokemon < 100){
-        pokemon = "0" + pokemon;
-      }
-      
-      console.log(pokemon)
-      
-      document.getElementById("poke").src = 'http://sprites.pokecheck.org/i/' + pokemon + '.gif'; 
-
-
+      document.getElementById("text").innerHTML = days[d.getDay()]   + "  " + months[d.getMonth()] + " " + dates + ",  "  +  d.getFullYear() +  "  | " +
+      hours + ":" + minutes + " " +  ampm;
+      }, 0);
     </script>
   </div>
 </div>
