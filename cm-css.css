@@ -127,4 +127,5 @@ input[type=text] {
 #text {
 	font-family: 'Courier';
 	text-align: center;
+	color:rgba(170,170,170,1);
 }

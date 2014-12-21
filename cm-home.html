@@ -59,8 +59,7 @@ $(document).ready(function(){
       document.getElementById("poke").src = 'http://sprites.pokecheck.org/i/' + pokemon + '.gif'; 
     setInterval(function(){
       var d = new Date();
-      var days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
-      var months = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
+      var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
       var dates = d.getDate();
       var hours = d.getHours();
       var minutes = d.getMinutes();
@@ -91,7 +90,7 @@ $(document).ready(function(){
         minutes = "0" + minutes;
       }
 
-      document.getElementById("text").innerHTML = days[d.getDay()]   + "  " + months[d.getMonth()] + " " + dates + ",  "  +  d.getFullYear() +  "  | " +
+      document.getElementById("text").innerHTML = dates   + "  " + months[d.getMonth()] + ",  "  +  d.getFullYear() +  "  | " +
       hours + ":" + minutes + " " +  ampm;
       }, 0);
     </script>
