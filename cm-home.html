@@ -11,18 +11,29 @@ Home
 <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="cm-css.css">
 <link rel="icon" type="image/png" href="https://people.mozilla.org/~shorlander/files/australis-toolbar-buttons/images/favicon-homeTab.png">
+<script src="js/jquery-1.11.1.min.js"></script>
 </head>
 <body>
+<script>
+$(document).ready(function(){
+  $('#video').hide();
+
+  $('#button').click(function() {
+    $('#video').slideToggle();
+  });
+});
+</script>
 <div class="outer">
   <div class="middle">
     <div class="poke"><img id="poke" src=""></img></div>
     <div id="head">
   		<form class="searchForm" method="get" action="https://google.com/search">
-      <input class="searchBar" type="text" name="q" placeholder="Search..." />
+      <input class="searchBar" type="text" name="q" autocomplete="off" placeholder="Search..." />
       </form>
   	</div>
-  	<div id="music">
-  	<iframe width="640" height="360" src="http://www.youtube.com/embed/videoseries?list=PLgbI0QcBNn5jsj7Ju1BEgGbT0bn4bLOdS" frameborder="0" allowfullscreen></iframe>
+    <div id="button">Music</div>
+  	<div id="video">
+  	<iframe width="550" height="270" src="http://www.youtube.com/embed/videoseries?list=PLgbI0QcBNn5jsj7Ju1BEgGbT0bn4bLOdS" frameborder="0" allowfullscreen></iframe>
   	</div>
     <div id="wrapper">
 	  <a href="http://www.ebay.co.uk/" target="_blank"><img src="http://i.imgur.com/0ZBiRDV.png" height="80" width="80"></a>
@@ -33,7 +44,8 @@ Home
 	  <a href="http://www.prodirectsoccer.com/" target="_blank"><img src="http://i.imgur.com/gd9JQSx.png" height="80" width="80"></a>
     </div>
     <script>
-  
+     
+
       var d = new Date();
       var days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
       var months = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
@@ -76,13 +88,9 @@ Home
         pokemon = "0" + pokemon;
       }
       
+      console.log(pokemon)
       
       document.getElementById("poke").src = 'http://sprites.pokecheck.org/i/' + pokemon + '.gif'; 
-      
-      
-      document.getElementById("boom").innerHTML = days[d.getDay()]   + "  " + months[d.getMonth()] + " " + dates + ",  "  +  d.getFullYear() +  "  | " +
-      hours + ":" + minutes + " " +  ampm;
-    
 
 
     </script>
