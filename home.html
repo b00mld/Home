@@ -17,26 +17,35 @@ $(document).ready(function(){
 
   $('#button').click(function() {
     $('#video').slideToggle();
+  });
+   var images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg'];
+   var image = images[Math.floor(Math.random() * 10) + 1];
+   $('body').css({'background-image': 'url(bg/'+image+')'});
+   console.log(image);
 
-  var videos = "1.webm";
-  $('video source').attr("src", 'bg/' + videos);
-  $('video source')[0].load();
+  $('#g-button').click(function(){
+    $('.searchForm').attr('action', 'https://google.com/search');
+    $('.searchBar').attr('placeholder', 'Google');
+    $('#g-button').css({'background-color': '#4F4FD6'});
+    $('#d-button').css({'background-color': '#F26F6F'});
+  });
+  $('#d-button').click(function(){
+    $('.searchForm').attr('action', 'http://duckduckgo.com/');
+    $('.searchBar').attr('placeholder', 'DuckDuckGo');  
+    $('#d-button').css({'background-color': '#BF4545'});
+    $('#g-button').css({'background-color': '#8686F0'});
   });
 });
 </script>
-<div id="sheet"></div>
-<video autoplay loop muted class="bgvideo" id="bgvideo">
-<source src="" type="video/webm">
-</video>
+<div autoplay loop id="sheet"></div>
 <div class="outer">
   <div class="middle">
   	<div id="head">
+      <div id="g-button">G</div>
+      <div id="d-button">D</div>
   		<form class="searchForm" method="get" target="_blank" action="https://google.com/search">
       <input class="searchBar" id="goog" type="Search"  autocomplete="off" name="q" although placeholder="Google" />
-      </form>
-      <form class="searchForm" method="get" action="http://duckduckgo.com/">
-        <input class="searchBar" id="duck" type="search" autocomplete="off" name="q" maxlength="255" placeholder="DuckDuckGo"/>
-      </form>
+      </form>   
   	</div>
     <div id="video-wrapper">
     <div id="button">Music</div>
