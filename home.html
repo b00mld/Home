@@ -64,6 +64,46 @@ $(document).ready(function(){
     <a href="http://jsfiddle.net/" target="_blank"><div class="block" style="background-color:#699DB3;">Jsfiddle</div></a>
     <a href="http://www.amazon.co.uk/?_encoding=UTF8&camp=1789&creative=390957&linkCode=ur2&tag=linustechtips-21" target="_blank"><div class="block" style="background-color:#C98E6F;">Amazon</div></a>
     </div>
+    <p id="time"></p>
+    <script>
+      setInterval(function(){
+      var d = new Date();
+      var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+      var dates = d.getDate();
+      var hours = d.getHours();
+      var minutes = d.getMinutes();
+      
+      if ( dates == 1 || dates == 21 || dates == 31 ){
+        dates = dates + "st";
+      } else if ( dates ==  2 || dates == 22 ){
+        dates = dates + "nd";
+      } else if ( dates ==  3 || dates == 23 ){
+        dates = dates + "rd";
+      } else {
+        dates = dates +"th";      
+      }
+      
+      
+      if  ( hours < 12 ){
+        ampm = "AM";
+      }  else {
+        hours -= 12;
+        ampm = "PM";
+      }
+      
+      if ( hours == 0 ){
+        hours = "12";
+      }
+      
+      if ( minutes < 10 ){
+        minutes = "0" + minutes;
+      }
+      document.getElementById("time").innerHTML = dates   + "  " + months[d.getMonth()] +  ",  "  +  d.getFullYear() +  "  | " +
+      hours + ":" + minutes + " " +  ampm;
+      }, 1000);
+
+
+    </script>
   </div>
 </div>
 </body>

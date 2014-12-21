@@ -35,6 +35,11 @@ iframe:hover {
 	vertical-align: middle;
 
 }
+#time {
+	font-family: 'Montserrat';
+	text-align: center;
+	color:white;
+}
 #g-button {
 	width: 20px;
 	height:40px;
@@ -49,6 +54,7 @@ iframe:hover {
 	color: #C7C7ED;
 	font-family: 'Roboto', sans-serif;
 	transition: 0.2s all linear;
+	cursor:pointer;
 }
 #g-button:hover {
 	background-color:#4F4FD6 ;
@@ -67,6 +73,7 @@ iframe:hover {
 	color:#F0AFAF;
 	font-family: 'Roboto', sans-serif;
 	transition: 0.2s all linear;
+	cursor:pointer;
 }
 #d-button:hover {
 	background-color:#BF4545;
@@ -120,9 +127,6 @@ img {
 	float:left;
 	margin-left:23px;
 	margin-top:23px;
-}
-@media screen and (max-width:1366px){
-	#button{display:none;}
 }
 @media screen and (max-width:1080px){
 	#head{display:none;}
