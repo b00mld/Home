@@ -36,19 +36,6 @@ iframe:hover {
 	vertical-align: middle;
 
 }
-.poke {
-	width: 640px;
-	height: 80px;
-	margin: 5px auto;
-	vertical-align: middle;
-}
-#poke {
-	margin-left: 280px;
-	margin-top: 0px;
-	height: 80px;
-	width:auto;
-	opacity: 1;
-}
 #head {
 	background-color: rgba(15,15,15,0.8);
 	width:640px;

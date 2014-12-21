@@ -15,8 +15,7 @@ Home
 <body>
 <div class="outer">
   <div class="middle">
-    <div class="poke"><img id="poke" src=""></img></div>
-    <div id="head">
+  	<div id="head">
   		<form class="searchForm" method="get" action="https://google.com/search">
       <input class="searchBar" type="text" name="q" placeholder="Search..." />
       </form>
@@ -32,60 +31,6 @@ Home
 	  <a href="http://www.youtube.com/" target="_blank"><img src="http://i.imgur.com/NYFZ6wj.png" height="80" width="80"></a>
 	  <a href="http://www.prodirectsoccer.com/" target="_blank"><img src="http://i.imgur.com/gd9JQSx.png" height="80" width="80"></a>
     </div>
-    <script>
-  
-      var d = new Date();
-      var days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
-      var months = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
-      var dates = d.getDate();
-      var hours = d.getHours();
-      var minutes = d.getMinutes();
-      
-      if ( dates == 1 || dates == 21 || dates == 31 ){
-        dates = dates + "st";
-      } else if ( dates ==  2 || dates == 22 ){
-        dates = dates + "nd";
-      } else if ( dates ==  3 || dates == 23 ){
-        dates = dates + "rd";
-      } else {
-        dates = dates +"th";      
-      }
-      
-      
-      if  ( hours < 12 ){
-        ampm = "AM";
-      }  else {
-        hours -= 12;
-        ampm = "PM";
-      }
-      
-      if ( hours == 0 ){
-        hours = "12";
-      }
-      
-      if ( minutes < 10 ){
-        minutes = "0" + minutes;
-      }
-      
-      pokemon = Math.floor(Math.random() * 649) + 1;
-
-      
-      if ( pokemon < 10 ){
-        pokemon = "00" + pokemon;
-      } else if (pokemon > 10 && pokemon < 100){
-        pokemon = "0" + pokemon;
-      }
-      
-      
-      document.getElementById("poke").src = 'http://sprites.pokecheck.org/i/' + pokemon + '.gif'; 
-      
-      
-      document.getElementById("boom").innerHTML = days[d.getDay()]   + "  " + months[d.getMonth()] + " " + dates + ",  "  +  d.getFullYear() +  "  | " +
-      hours + ":" + minutes + " " +  ampm;
-    
-
-
-    </script>
   </div>
 </div>
 </body>
