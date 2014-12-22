@@ -1,5 +1,7 @@
-body {
-	background-image: url(tumblr_static.png); 
+@import url(http://fonts.googleapis.com/css?family=Lato|Ubuntu|Roboto|Montserrat);
+body {	
+	overflow-y:hidden;
+	overflow-x:hidden;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -7,9 +9,6 @@ body {
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size: cover;
-	overflow-y: hidden;
-	overflow-x:hidden;
-
 }
 form {
 	margin:0px auto;
@@ -17,7 +16,14 @@ form {
 	vertical-align: middle;
 	line-height: 40px;
 }
-
+iframe {
+opacity:0.8;
+transition:all 1s;
+}
+iframe:hover {
+	opacity:1;
+	transition:all 1s;
+}
 .outer {
 	display: table;
 	position:absolute;
@@ -29,25 +35,183 @@ form {
 	vertical-align: middle;
 
 }
-#head {
-	background-color: rgba(15,15,15,0.8);
-	width:640px;
+#time {
+	font-family: 'Montserrat';
+	text-align: center;
+	color:white;
+}
+#g-button {
+	width: 20px;
 	height:40px;
+	background-color: #8686F0;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	line-height: 40px;
+	vertical-align: middle;
+	border-radius: 3px 0 0 0;
+	color: #C7C7ED;
+	font-family: 'Roboto', sans-serif;
+	transition: 0.2s all linear;
+	cursor:pointer;
+}
+#g-button:hover {
+	background-color:#4F4FD6 ;
+}
+#d-button {
+	width: 20px;
+	height:40px;
+	background-color: #F26F6F;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	line-height: 40px;
+	vertical-align: middle;
+	border-radius: 0px;
+	color:#F0AFAF;
+	font-family: 'Roboto', sans-serif;
+	transition: 0.2s all linear;
+	cursor:pointer;
+}
+#d-button:hover {
+	background-color:#BF4545;
+}
+#head {
+	width:530px;
+	height:50px;
 	margin:5px auto;
 	text-align:center;
+	overflow: hidden;
+	border-radius: 3px 3px 0 0;
+	background-color: #F1F1F1;
 }
-#music {
-		width:640px;
-		margin:5px auto;
+.searchBar {
+	background-color:#F5F5F5;
+	width:470px;
+	margin-top: 5px;
+	margin-left: 5px;
+	height:40px;
+	outline:0;
+	transition: all 1s;
+	border-style:none;
+	border-radius: 0 3px 0 0;
+	text-align: left;
+	float:left;
+}
+.searchBar:Hover {
+	background-color:rgba(0,0,0,0.1);
+	transition: all 1s;
+}
+.searchBar:focus {
+	background-color:rgba(0,0,0,0.1);
+	transition: all 1s;
+}
+.searchForm {
+	width:640px;
+}
+input:focus {
+	background-color:rgba(0,0,0,0.1);
 }
 #wrapper {
-	background-color: rgba(15, 15, 15, 0.8);
-	height:360px;
-	width:640px;
+	background-color: #F1F1F1;
+	height:215px;
+	width:530px;
 	margin:0 auto;
 	vertical-align: middle;
+	opacity: 1;
+	border-radius: 0px 0px 3px 3px;
 }
 img {
 	float:left;
-	padding:24px;
+	margin-left:23px;
+	margin-top:23px;
+}
+@media screen and (max-width:1080px){
+	#head{display:none;}
+}
+input {
+	padding-left:10px;
+	font-size:20px;
+	color:white;
+
+}
+input[type=text] {
+	color:rgba(170,170,170,0.2);
+	font-family: 'Courier';
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+.bgvideo {
+	position: fixed;
+	right:0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%
+	width:auto;
+	height:auto;
+	z-index: -9999;
+}
+#sheet {
+	position: fixed;
+	right:0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%
+	width:auto;
+	height:100%;
+	z-index: -999;
+	background-color: rgba(0,0,0,0.4);
+
+}
+.block {
+	line-height: 100px;
+	vertical-align: middle;
+	background-color: white;
+	text-align:center;
+	width:100px;
+	height:100px;
+	float:left;
+	margin-left: 5px;
+	margin-top: 5px;
+	border-radius: 2px;
+}
+a {
+	text-decoration: none;
+	font-family: "Roboto";
+	color:rgba(255,255,255,0.4);
+	transition:all ease-out 0.5s;
+	-webkit-font-smoothing: antialiased;
+}
+a:hover {
+	color:rgba(255,255,255,1);
+	transition:all ease-out 0.5s;
+}
+#video-wrapper {
+
+}
+#button {
+	width:530px;
+	height:20px;
+	background-color: #F1F1F1;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	text-align: center;
+	line-height: 20px;
+	vertical-align:middle; 
+	font-family: 'Montserrat', sans-serif;
+	color:rgba(0,0,0,0.3);
+	cursor:pointer;
+}
+#video {
+	width: 530px;
+	height:295px;
+	background-color: #F1F1F1;
+	margin:auto;
+	margin-bottom: 5px;
 }
